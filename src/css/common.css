@@ -22,3 +22,24 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.gallery {
+  width: 100vw;
+  margin-inline: auto;
+  gap: 12px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  list-style: none;
+}
+.gallery__item {
+  flex: 1;
+  max-height: 500px;
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  
+}
