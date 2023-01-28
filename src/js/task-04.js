@@ -4,13 +4,14 @@ const decrButton = document.querySelector('[data-action="decrement"]');
 
 let counterValue = 0;
 
-incrButton.addEventListener('click', () => {
-counterValue += 1;
-counterContainer.textContent = counterValue;
-})
+incrButton.addEventListener('click', increaseValue);
+decrButton.addEventListener('click', decreaseValue);
 
-decrButton.addEventListener('click', () => {
-counterValue -= 1;
-counterContainer.textContent = counterValue;
-})
-
+function increaseValue() {
+    counterValue += 1;
+    counterContainer.textContent = counterValue + 1;
+}
+function decreaseValue() {
+    counterValue -= 1;
+    counterContainer.textContent = counterValue;
+}

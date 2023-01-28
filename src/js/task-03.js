@@ -15,5 +15,5 @@ const images = [
 
 
 const galleryLiItems = images.map(img => 
-  `<li class='gallery__item'><img class='gallery__img' src=${img.url} alt=${img.alt}></li>`).join('');
-document.querySelector('ul.gallery').insertAdjacentHTML('beforeend', galleryLiItems);
+  `<li class='gallery__item'><img class='gallery__img' src=${img.url} alt=${img.alt}></li>`);
+document.querySelector('ul.gallery').insertAdjacentHTML('beforeend', galleryLiItems.join(''));
