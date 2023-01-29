@@ -17,7 +17,7 @@ function createBoxes(amount) {
     }
   refs.container.innerHTML = HTMLElements;
   console.clear();
-  console.log(`\n${refs.amountInpt.value} beautifly colored circles created🙃`)
+  console.log(`\n${refs.amountInpt.value} beautifully colored circles created🙃`)
   }  
 }
 
