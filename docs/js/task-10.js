@@ -24,20 +24,12 @@ function createBoxes(amount) {
 }
 
 refs.createBtn.addEventListener('click', () => {
-  if (
-    refs.container.childElementCount <= 1 &&
-    +refs.amountInpt.value >= 1 &&
-    +refs.amountInpt.value <= 100
-  ) {
+  if (+refs.amountInpt.value >= 1 && +refs.amountInpt.value <= 100) {
     createBoxes(+refs.amountInpt.value);
     refs.amountInpt.setAttribute('disabled', true);
     refs.createBtn.setAttribute('disabled', true);
-  } else if (
-    (+refs.amountInpt.value < 1 || +refs.amountInpt.value > 100) &&
-    refs.container.childElementCount === 1
-  ) {
-    alert(`Put the number from 1 to 100`);
-  }
+  } else alert(`Put the number from 1 to 100`);
+
   refs.amountInpt.value = '';
 });
 
