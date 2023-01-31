@@ -8,10 +8,11 @@ incrButton.addEventListener('click', increaseValue);
 decrButton.addEventListener('click', decreaseValue);
 
 function increaseValue() {
-    counterValue += 1;
-    counterContainer.textContent = counterValue + 1;
+  counterValue += 1;
+  counterContainer.textContent = counterValue + 1;
 }
+
 function decreaseValue() {
-    counterValue -= 1;
-    counterContainer.textContent = counterValue;
+  counterValue -= 1;
+  counterContainer.textContent = counterValue;
 }
